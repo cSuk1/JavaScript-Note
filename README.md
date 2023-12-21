@@ -1,3 +1,7 @@
 ## JavaScript 学习笔记
 
-[笔记文档](/Doc)
+[JavaScript 笔记文档](/JavaScript)
+
+[NodeJS 笔记文档](/NodeJS)
+
+[示例代码](/Code)
