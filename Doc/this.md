@@ -33,7 +33,7 @@ const obj = {
 obj.sayHello(); // 输出 "Hello, John"
 ```
 
-构造函数：当函数作为构造函数使用（使用 `new`关键字创建实例）时，`this`指向新创建的对象实例。
+构造函数：通过构建函数 `new`关键字生成一个实例对象，此时 `this`指向这个实例对象
 
 ```JavaScript
 function Person(name) {

@@ -39,7 +39,7 @@ for (let value of logger) {
 
 `yield` 表达式除了可以返回一个值之外，还可以用来接收外部传入的值。当调用 Generator 对象的 `next()` 方法时，可以通过传递参数将值传递给 Generator 函数内部的 `yield` 表达式。
 
-第一个 `next()`方法中传入的值会被忽略，这是因为此时函数才刚刚开始执行，还没有遇到任何 `yield`可以接收输入值，函数会在 `let msg = yield`处停止执行，因为遇到了 `yield`关键字。
+第一个 `next()`方法中传入的值会被忽略，这是因为此时函数才刚刚开始执行，还没有遇到任何 `yield`可以接收输入值，函数会在 `let msg = yield`处停止执行，因为遇到了 `yield`关键字。通过调用 `next`方法可以带一个参数，该参数就会被当作上一个 `yield`表达式的返回值。
 
 ```javascript
 function* genFunc() {
